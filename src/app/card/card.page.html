@@ -1,13 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>card</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="warning"></ion-icon>
+        
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Viajar</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">card</ion-title>
+      <ion-title size="large">Viajar</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -15,13 +21,25 @@
   <ion-card>
     <img alt="Silhouette of mountains" src="" />
     <ion-card-header>
-      <ion-card-title>Bienvenido</ion-card-title>
+      <ion-card-title>Inicia un viaje</ion-card-title>
     </ion-card-header>
   
     <ion-card-content>
-      Los viajes mas seguros de los alumnos del duoc para los alumnos del duoc.
+      Inicia un viaje como piloto o como pasajero
+      <ion-button expand="full" color="warning">Pilito</ion-button>
     </ion-card-content>
   </ion-card>
 
+  <ion-card>
+    <img alt="Silhouette of mountains" src="" />
+    <ion-card-header>
+      <ion-card-title>Piloto</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Inicia un viaje como pasajero
+      <ion-button expand="full" color="warning">pasajero</ion-button>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
