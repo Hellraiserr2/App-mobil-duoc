@@ -6,7 +6,18 @@ import { CardPage } from './card.page';
 const routes: Routes = [
   {
     path: '',
-    component: CardPage
+    redirectTo:'card',
+    pathMatch:'full',
+  },
+  {
+    path:'',
+    component:CardPage,
+    children:[
+      {
+        path:'formulario',
+        loadChildren:()=> import('../formulario/formulario-routing.module').then(m=> m.FormularioPageRoutingModule)
+      }
+    ]
   }
 ];
 

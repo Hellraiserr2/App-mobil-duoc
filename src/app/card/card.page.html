@@ -2,7 +2,6 @@
   <ion-toolbar>
     <ion-buttons slot="start" color=""primary>
         <ion-back-button defaultHref="/"></ion-back-button>
-      </ion-buttons>
       <ion-button (click)="mostrarMenu()">
         <ion-icon slot="icon-only" name="menu-outline" color="warning"></ion-icon>
         
@@ -21,20 +20,20 @@
 
 
   <ion-tabs>
-    <ion-tab-bar slot="bottom">
+    <ion-tab-bar slot="bottom,top">
       <ion-tab-button tab="inicio">
-        <ion-icon name="flash"></ion-icon>
-        <ion-label>prueba</ion-label>
+        <ion-icon name="inicio"></ion-icon>
+        <ion-label>Inicio</ion-label>
       </ion-tab-button>
 
       <ion-tab-button tab="card">
-        <ion-icon name="apps"></ion-icon>
-        <ion-label>Tab Two</ion-label>
+        <ion-icon name="card"></ion-icon>
+        <ion-label>Card</ion-label>
       </ion-tab-button>
 
       <ion-tab-button tab="formulario">
-        <ion-icon name="send"></ion-icon>
-        <ion-label>Tab Three</ion-label>
+        <ion-icon name="formulario"></ion-icon>
+        <ion-label>Formulario</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
