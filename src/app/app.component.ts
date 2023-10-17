@@ -13,6 +13,10 @@ interface Componente{
 })
 export class AppComponent {
 
+  getImagenPath(){
+    return 'assets/google-maps-2.jpg'
+  }
+
   componentes : Componente[]=[
     {
       name:'Inicio',
@@ -20,15 +24,16 @@ export class AppComponent {
       redirecTo:'/inico'
     },
     {
-      name:'Card',
+      name:'viaje-conductor',
       icon: 'bug-outline',
-      redirecTo:'/card'
+      redirecTo:'/viaje-conductor'
     },
     {
-      name:'Formulario',
+      name:'viaje-pasajero',
       icon: 'attach-outline',
-      redirecTo:'/formulario'
+      redirecTo:'/viaje-pasajero'
     },
+    
   ]
 
 

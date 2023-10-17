@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { GooglemapsPageRoutingModule } from './googlemaps-routing.module';
+import { ViajePasajeroPageRoutingModule } from './viaje-pasajero-routing.module';
 
-import { GooglemapsPage } from './googlemaps.page';
+import { ViajePasajeroPage } from './viaje-pasajero.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    GooglemapsPageRoutingModule
+    ViajePasajeroPageRoutingModule
   ],
-  declarations: [GooglemapsPage]
+  declarations: [ViajePasajeroPage]
 })
-export class GooglemapsPageModule {}
+export class ViajePasajeroPageModule {}

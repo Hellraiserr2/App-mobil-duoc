@@ -20,5 +20,8 @@ export class InicioPage implements OnInit {
     this.menuController.open('first');
 
   }
+  getImagenPath(): string {
+    return 'assets/google-maps-22.jpg';
+  }
 
 }
