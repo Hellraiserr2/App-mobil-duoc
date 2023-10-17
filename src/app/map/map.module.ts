@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FormularioPageRoutingModule } from './formulario-routing.module';
+import { MapPageRoutingModule } from './map-routing.module';
 
-import { FormularioPage } from './formulario.page';
+import { MapPage } from './map.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FormularioPageRoutingModule
+    MapPageRoutingModule
   ],
-  declarations: [FormularioPage]
+  declarations: [MapPage]
 })
-export class FormularioPageModule {}
+export class MapPageModule {}
