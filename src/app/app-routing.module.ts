@@ -26,6 +26,10 @@ const routes: Routes = [
   },  {
     path: 'map',
     loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
+  },
+  {
+    path: 'googlemaps',
+    loadChildren: () => import('./googlemaps/googlemaps.module').then( m => m.GooglemapsPageModule)
   }
 
 
